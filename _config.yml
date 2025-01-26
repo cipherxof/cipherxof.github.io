@@ -1,0 +1,87 @@
+# Site settings
+title: cipherxof's blog # site title
+description: >- # site description
+ A somewhat technical blog where I can outline some of the more interesting personal projects I've worked on.
+lang: en-US # default lang
+timezone: America/Los_Angeles # set your timezone
+image: assets/img/avatar.jpg # This image used for Open Graph more info https://ogp.me/
+repo: https://github.com/cipherxof # site repo [optional]
+mode: dark # default theme "dark" | "light"
+
+# Profile settings
+author:
+  name: cipherxof # author name
+  bio: >- # tell to the world
+    games, reverse engineering, hacking
+  username: TriggerHappy # general username
+  github: cipherxof # github username
+  avatar: /assets/img/avatar.jpg # change with your own avatar
+
+# URL settings
+url: "https://cipherxof.github.io" #
+baseurl:
+permalink: /:title/
+google_analytics: # leave it blank if not wish
+fb_appid:
+
+# Collection setting
+collections:
+  posts:
+    output: true
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: post
+      comments: false
+
+# Jekyll Compose default front matter
+jekyll_compose:
+  post_default_front_matter:
+    modified:
+    tags: []
+    description:
+  draft_default_front_matter:
+    modified:
+    tags: []
+    description:
+
+# Homepage limit posts
+number_of_posts: 5
+
+# Build settings
+# theme: klise
+sass:
+  style: compressed
+
+include:
+  - _redirects
+  - .htaccess
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - CHANGELOG.md
+  - README.md
+  - node_modules
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
+  - lighthouse.png
+  - klise-*.gem
+  - klise.gemspec
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-postfiles
