@@ -23,7 +23,7 @@ During this time, the game was still supporting players on the PS3's Official Fi
 
 Looking through the game files, we can find an older unused animation file that actually does include the side stepping animation, but the animation only existed for male characters. This makes sense as MGS4 makes use of these animations in the story mode for Old Snake. Attempts were made to try and force the game to use this animation, but as you can see in the following video, the animation state isn't synchronized properly.
 
-<iframe width="100%" height="400" src="http://www.youtube.com/embed/uK5CjQ8MnV4" frameborder="0" allowfullscreen></iframe>
+<iframe anonymous width="100%" height="400" src="http://www.youtube.com/embed/uK5CjQ8MnV4" frameborder="0" allowfullscreen></iframe>
 
 Funny enough, the arcade game has a version of the map with ladders and it has these same issues.
 
