@@ -81,7 +81,7 @@ if (iVar9 != 0) {
 
 Every time another player climbed a ladder, my breakpoint would trigger. After hopping around various pointers, I discovered that the side-stepping animation ID was actually being stored in memory for other networked players, though the game wasn't processing it for some reason. This was a good sign – it meant we wouldn't need to modify any network packets.
 
-After going through all the addresses reading from our ladder plugin's current step value (offset `0x128`), I finally landed on the folllowing function:
+After going through all the addresses reading from our ladder plugin's current ladder ID (offset `0x128`), I finally landed on the folllowing function:
 
 {% highlight cpp %}
 int ReadLadderMotion(int param_1)
